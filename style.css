@@ -86,6 +86,7 @@
     font-family: Roboto;
     font-size: 50px;
     font-weight: 700;
+    margin: 0 0 2% 0;
 }
 
 .paragraphFromTopBackground {
@@ -142,21 +143,23 @@
     width: 100%;
 }
 
-.bodyFromMain_ {
+/* .bodyFromMain_ {
     display: flex;
     justify-content: center;
-    width: 70%;
-}
+    flex-direction: column;
+    width: 80%;
+} */
 
 .mainFeatures {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .mainFeatures_ {
     display: flex;
-    flex-flow: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 0 0 5% 0;
 }
 
@@ -165,7 +168,7 @@
     font-family: Roboto;
     font-size: 40px;
     font-weight: 700;
-    margin: 0 0 2% 0;
+    margin: 0 0 4% 0;
 }
 
 .paragraphMainFeatures_ {
@@ -176,7 +179,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    margin: 0 0 5% 0;
+    margin: 0 0 3% 0;
+    width: 70%;
     /* 27px */
 }
 
@@ -184,9 +188,9 @@
     display: flex;
     justify-content: center;
     gap: 5%;
+    margin: 0 0 13% 0;
+    width: 75%;
 }
-
-.bestPerformance {}
 
 .mainFeaturesArticle {
     display: flex;
@@ -205,9 +209,54 @@
 }
 
 .pFromMainFeaturesArticle_ {
-    color: var(--text-secondary, #8794BA);
+    color: #8794BA;
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
+}
+
+.mainFigcaptionFromFigurateTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    width: 30%;
+    margin-left: 5%;
+
+}
+
+.h2FromMainTop {
+    color: #172755;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+.pFromMainTop {
+    color: var(--text-secondary, #8794BA);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 27px */
+}
+
+.mainFigurate {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-bottom: 5%;
+}
+
+.mainFigurate2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.imgFigurateTop {
+    width: 45%;
 }
