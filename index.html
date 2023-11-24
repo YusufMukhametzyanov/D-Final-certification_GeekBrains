@@ -8,10 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.w3docs.com/favicon.ico" type="image/x-icon">
     <title>My final certification in GeekBrains</title>
 </head>
 
 <body>
+
+    <!-- https://www.figma.com/file/PxV85sdIzWj0CZ2kqg0hsT/Analytics-%E2%80%94Landing-Page-Design-(Community)?node-id=0%3A1 -->
+
     <header class="header">
         <img src="img/backgroundTop.png" alt="background_top" class="backgroundTop">
         <nav class="nav">
@@ -22,7 +26,7 @@
                     class="linkFromNav">Blog</a>
             </div>
             <a href="" class="linkFromNav">Sign&nbsp;in</a>
-            <button class="SignUpButton">Sign&nbsp;Up</button>
+            <button class="SignUpButton" onclick="helloUser()">Sign&nbsp;Up</button>
         </nav>
         <figure class="figureFromTop">
             <figcaption class="figcaptionFromTopBackground">
@@ -107,18 +111,116 @@
         </section>
     </section>
     <section class="bodyFromMain2">
-       <figure class="bodyFromMain2_">
         <img src="img/backgroundBottom.png" alt="backgroundBottom" class="backgroundBottom">
-        <img src="img/backgroundBottom2.png" alt="backgroundBottom2" class="backgroundBottom2">
-        <img src="img/backgroundBotto3.png" alt="backgroundBottom3" class="backgroundBottom3">
+       <figure class="bodyFromMain2_">
+        <div class="signUp">
+            <p class="signUpTitle">Sign Up</p>
+            <form class="signUpForm">
+                <button class="startTrialPeriodButton">Start your free trial</button>
+
+                <input type="email" name="email" id="primaryEmail" placeholder="Your primary email" class="primaryEmail" title="Enter your email">
+                <input type="password" name="password" id="password" placeholder="Password" class="password" title="Enter your password">
+                <input type="password" name="ReTypePassword" id="ReTypePassword" placeholder="Re-type Password" class="ReTypePassword" title="Enter your password again">
+                
+                <p class="getBetter"><strong>Help us get better</strong></p>
+               
+            </form>
+            <div class="rating">
+
+                <input type="radio" id="star-1" name="rating" value="1">
+                <label for="star-1" title="Оценка «5»"></label>
+              
+                <input type="radio" id="star-2" name="rating" value="2">
+                <label for="star-2" title="Оценка «4»"></label>
+              
+                <input type="radio" id="star-3" name="rating" value="3">
+                <label for="star-3" title="Оценка «3»"></label>
+              
+                <input type="radio" id="star-4" name="rating" value="4">
+                <label for="star-4" title="Оценка «2»"></label>
+              
+                <input type="radio" id="star-5" name="rating" value="5">
+                <label for="star-5" title="Оценка «1»"></label>
+              
+              </div>
+            <div class="lineSignUp"></div>
+            <div class="alreadyAccount">
+                <p class="alreadyAccountParagraph">Already have an account?</p>
+                <a href="#" class="alreadyAccountLink"><strong>Login</strong></a>
+            </div>
+        </div>
+        <section class="bodyFromMain3">
+            <figure class="bestCompanies">
+                <figcaption class="bestCompanies_">See why the world’s best companies use Analytics</figcaption>
+                <div class="trustedBy">
+                    <div class="trustedBy_"></div>
+                    <p class="trustedByParagraph">Trusted by</p>
+                    <div class="trustedBy_"></div>
+                </div>
+                <div class="brands">
+                    <img src="img/accenture.png" alt="accenture" class="accenture">
+                    <img src="img/react.png" alt="react" class="react">
+                </div>
+                <div class="brands2">
+                    <img src="img/airbnb.png" alt="airbnb" class="airbnb">
+                    <img src="img/sky.png" alt="sky" class="sky">
+                </div>
+            </figure>
+            <div class="signUpBackground">
+            </div>
+        </section>
         <figcaption class="pricingPlans">
             <h2 class="h2PricingPlans">Pricing&nbsp;Plans</h2>
             <p class="paragraphPricingPlans">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi&nbsp; aliquet
                 volutpat pellentesque volutpat est. </p>
         </figcaption>
-       </figure>
-    </section>
+        <div class="pricingPlans2">
+            <div class="pricingPlans3">
+                <div class="pricingPlans3_">
+                    <p class="starterPremium">Starter</p>
+                <p class="users">up to 3 users</p>
+                <div class="line"></div>
+                <div class="price">
+                    <p class="currency">$</p>
+                    <p class="price1">29</p>
+                </div>
+                <p class="duration">per month</p>
+                <button class="order">Order</button>
+                </div>
+            </div>
+            <div class="pricingPlans4">
+                <div class="pricingPlans3_">
+                    <p class="standart">Standart</p>
+                <p class="users">up to 20 users</p>
+                <div class="line2"></div>
+                <div class="price">
+                    <p class="currency2">$</p>
+                    <p class="price2">99</p>
+                </div>
+                <p class="duration">per month</p>
+                <button class="order2">Order</button>
+                </div>
+            </div>
+            <div class="pricingPlans3">
+                <div class="pricingPlans3_">
+                    <p class="starterPremium">Premium</p>
+                <p class="users">up to 200 users</p>
+                <div class="line"></div>
+                <div class="price">
+                    <p class="currency">$</p>
+                    <p class="price1">299</p>
+                </div>
+                <p class="duration">per month</p>
+                <button class="order">Order</button>
+                </div>
+            </div>
+            
 
+        </div>
+       </figure>
+       <footer class="footerForMain2"></footer>
+    </section>
+    
 
     <script src="script.js"></script>
     <script src="data.js"></script>
