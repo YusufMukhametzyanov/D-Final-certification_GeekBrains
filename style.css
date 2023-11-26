@@ -1,6 +1,6 @@
 .jello-vertical:hover {
-	-webkit-animation: jello-vertical 0.9s both;
-	        animation: jello-vertical 0.9s both;
+    -webkit-animation: jello-vertical 0.9s both;
+    animation: jello-vertical 0.9s both;
 }
 
 /* ----------------------------------------------
@@ -15,67 +15,80 @@
  * animation jello-vertical
  * ----------------------------------------
  */
- @-webkit-keyframes jello-vertical {
+@-webkit-keyframes jello-vertical {
     0% {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
     }
+
     30% {
-      -webkit-transform: scale3d(0.75, 1.25, 1);
-              transform: scale3d(0.75, 1.25, 1);
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
     }
+
     40% {
-      -webkit-transform: scale3d(1.25, 0.75, 1);
-              transform: scale3d(1.25, 0.75, 1);
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
     }
+
     50% {
-      -webkit-transform: scale3d(0.85, 1.15, 1);
-              transform: scale3d(0.85, 1.15, 1);
+        -webkit-transform: scale3d(0.85, 1.15, 1);
+        transform: scale3d(0.85, 1.15, 1);
     }
+
     65% {
-      -webkit-transform: scale3d(1.05, 0.95, 1);
-              transform: scale3d(1.05, 0.95, 1);
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
     }
+
     75% {
-      -webkit-transform: scale3d(0.95, 1.05, 1);
-              transform: scale3d(0.95, 1.05, 1);
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
     }
+
     100% {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
     }
-  }
-  @keyframes jello-vertical {
+}
+
+@keyframes jello-vertical {
     0% {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
     }
+
     30% {
-      -webkit-transform: scale3d(0.75, 1.25, 1);
-              transform: scale3d(0.75, 1.25, 1);
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
     }
+
     40% {
-      -webkit-transform: scale3d(1.25, 0.75, 1);
-              transform: scale3d(1.25, 0.75, 1);
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
     }
+
     50% {
-      -webkit-transform: scale3d(0.85, 1.15, 1);
-              transform: scale3d(0.85, 1.15, 1);
+        -webkit-transform: scale3d(0.85, 1.15, 1);
+        transform: scale3d(0.85, 1.15, 1);
     }
+
     65% {
-      -webkit-transform: scale3d(1.05, 0.95, 1);
-              transform: scale3d(1.05, 0.95, 1);
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
     }
+
     75% {
-      -webkit-transform: scale3d(0.95, 1.05, 1);
-              transform: scale3d(0.95, 1.05, 1);
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
     }
+
     100% {
-      -webkit-transform: scale3d(1, 1, 1);
-              transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
     }
-  }
-  
+}
+
 
 * {
     margin: 0;
@@ -89,6 +102,7 @@ a {
 .header {
     display: grid;
     margin: 0 0 2% 0;
+
 }
 
 .backgroundTop {
@@ -550,7 +564,7 @@ a {
     width: 95%;
     height: 50px;
     padding: 10px 80px;
-    background-color:#EF2A82;
+    background-color: #EF2A82;
     color: #FFF;
     font-family: Roboto;
     font-size: 16px;
@@ -567,6 +581,7 @@ a {
 .order2:hover {
     background-color: rgb(198, 15, 97);
 }
+
 .order2:active {
     background-color: #EF2A82;
 }
@@ -575,7 +590,7 @@ a {
     background: #D3D9E9;
     width: 100%;
     height: 1px;
-    margin-top: 12%;    
+    margin-top: 12%;
 }
 
 .bestCompanies {
@@ -611,7 +626,7 @@ a {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    margin: 75px  36px 0 24px;
+    margin: 75px 36px 0 24px;
 }
 
 .brands {
@@ -687,12 +702,12 @@ a {
 
 .startTrialPeriodButton:hover {
     background-color: #722ed1de;
-    
+
 }
 
 .startTrialPeriodButton:active {
     background-color: #722ED1;
-    
+
 }
 
 .primaryEmail {
@@ -778,41 +793,41 @@ a {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-end;
-  }
-  
-  .rating:not(:checked)>input {
+}
+
+.rating:not(:checked)>input {
     display: none;
-  }
-  
-  .rating:not(:checked)>label {
+}
+
+.rating:not(:checked)>label {
     width: 20px;
     cursor: pointer;
     font-size: 20px;
     color: lightgrey;
     text-align: center;
     line-height: 1;
-  }
-  
-  .rating:not(:checked)>label:before {
+}
+
+.rating:not(:checked)>label:before {
     content: '★';
-  }
-  
-  .rating>input:checked~label {
+}
+
+.rating>input:checked~label {
     color: gold;
-  }
-  
-  .rating:not(:checked)>label:hover,
-  .rating:not(:checked)>label:hover~label {
+}
+
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
     color: gold;
-  }
-  
-  .rating>input:checked+label:hover,
-  .rating>input:checked+label:hover~label,
-  .rating>input:checked~label:hover,
-  .rating>input:checked~label:hover~label,
-  .rating>label:hover~input:checked~label {
+}
+
+.rating>input:checked+label:hover,
+.rating>input:checked+label:hover~label,
+.rating>input:checked~label:hover,
+.rating>input:checked~label:hover~label,
+.rating>label:hover~input:checked~label {
     color: gold;
-  }
+}
 
 .footerForMain2 {
     background-color: #1F2F5C;
@@ -837,7 +852,7 @@ a {
     justify-content: center;
     gap: 7%;
 }
-
+    
 .navigationBottomParagraph {
     color: var(--text-secondary, #8794BA);
     font-family: Roboto;
