@@ -118,6 +118,8 @@ a {
 
 .logoFromHeader {
   margin: 6vh 0 0 8.5vw;
+  width: 13vw;
+  height: auto;
 }
 
 .navFromCenter {
@@ -140,7 +142,7 @@ a {
   justify-content: center;
   align-items: center;
   margin: 5.7vh 0 0 3vw;
-  padding: 10px 53px 10px 53px;
+  padding: 1vh 5vw 1vh 5vw;
   border-radius: 68px;
   border: 1px solid #8794ba;
   color: #8794ba;
@@ -296,6 +298,21 @@ a {
   flex-direction: column;
   gap: 3vh;
   width: 26vw;
+}
+
+.monitoring {
+  width: 4.5vw;
+  height: auto;
+}
+
+.widgetSystem {
+  width: 4.5vw;
+  height: auto;
+}
+
+.bestPerformance {
+  width: 4.5vw;
+  height: auto;
 }
 
 .pFromMainFeaturesArticle {
@@ -847,6 +864,10 @@ a {
   align-items: center;
 }
 
+.footer-logo {
+  width: 10vw;
+}
+
 .navigationBottom {
   display: flex;
   align-items: center;
@@ -866,4 +887,9 @@ a {
   justify-content: center;
   align-items: center;
   gap: 8%;
+}
+
+.footerLogos {
+  width: 2vw;
+  height: 2.5vh;
 }
