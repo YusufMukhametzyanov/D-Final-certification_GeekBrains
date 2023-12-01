@@ -114,18 +114,24 @@ a {
   grid-area: 1/1;
   height: 12vh;
   z-index: 10;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(2vh);
 }
 
 .logoFromHeader {
-  margin: 6vh 0 0 8.5vw;
+  /* margin: 6vh 0 0 8.5vw; */
   width: 13vw;
   height: auto;
+  transform: translateX(-14.5vw);
 }
 
 .navFromCenter {
   display: flex;
   gap: 3vw;
-  margin: 0 15vw 0 5vw;
+  transform: translateX(-5vw);
+  /* margin: 0 15vw 0 5vw; */
 }
 
 .linkFromNav {
@@ -134,15 +140,19 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 7vh 0 0 0;
+  /* margin: 7vh 0 0 0; */
+}
+
+.linkSignIn {
+  transform: translateX(8vw);
 }
 
 .SignUpButton {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin: 5.7vh 0 0 3vw;
-  padding: 1vh 5vw 1vh 5vw;
+  /* margin: 5.7vh 0 0 3vw; */
+  padding: 1vw 5vw 1vw 5vw;
   border-radius: 68px;
   border: 1px solid #8794ba;
   color: #8794ba;
@@ -150,10 +160,11 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 13vw;
+  width: 10vw;
   height: 5vh;
   background-color: #172755;
   transition: all 0.3s;
+  transform: translateX(10.5vw);
 }
 
 .SignUpButton:hover {
@@ -892,4 +903,70 @@ a {
 .footerLogos {
   width: 2vw;
   height: 2.5vh;
+}
+
+/* ==========Adaptive=========== */
+
+@media (max-width: 780px) {
+  .nav,
+  .logoFromHeader,
+  .navFromCenter,
+  .linkSignIn,
+  .SignUpButton {
+    transform: translateY(-0.5vh);
+  }
+
+  .logoFromHeader {
+    transform: translateX(-15vw);
+  }
+
+  .navFromCenter {
+    transform: translateX(-7vw);
+  }
+
+  .SignUpButton {
+    transform: translateX(11vw);
+  }
+
+  .linkSignIn {
+    transform: translateX(8vw);
+  }
+}
+
+@media (max-width: 680px) {
+  .SignUpButton {
+    height: 3vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav,
+  .logoFromHeader,
+  .navFromCenter,
+  .linkSignIn,
+  .SignUpButton {
+    transform: translateY(-3vh);
+  }
+
+  .logoFromHeader {
+    transform: translateX(-15vw);
+  }
+
+  .navFromCenter {
+    transform: translateX(-7vw);
+  }
+
+  .SignUpButton {
+    transform: translateX(11vw);
+  }
+
+  .linkSignIn {
+    transform: translateX(8vw);
+  }
+}
+
+@media (max-width: 320px) {
+  .SignUpButton {
+    height: 2vh;
+  }
 }
