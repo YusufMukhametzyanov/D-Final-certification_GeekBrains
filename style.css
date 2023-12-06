@@ -167,6 +167,10 @@ a {
   transform: translateX(10.5vw);
 }
 
+.menuIcon {
+  display: none;
+}
+
 .SignUpButton:hover {
   background-color: aliceblue;
 }
@@ -1029,7 +1033,48 @@ a {
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 768px) {
+  .nav {
+  }
+
+  .logoFromHeader {
+    width: 138px;
+    height: 30px;
+    transform: translateX(6.5vw);
+  }
+
+  .leftBlockFromNav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50vw;
+    gap: 3vw;
+  }
+
+  .linkSignIn {
+    transform: translateX(0);
+    font-size: 1rem;
+  }
+
+  .menuIcon {
+    display: flex;
+    margin-right: 6vw;
+  }
+
+  .SignUpButton {
+    display: none;
+  }
+
+  .navFromCenter {
+    display: none;
+  }
+
+  .logoFromHeader_ {
+    width: 50vw;
+  }
+}
+
+/* @media (max-width: 680px) {
   .SignUpButton {
     height: 3vh;
   }
@@ -1065,4 +1110,4 @@ a {
   .SignUpButton {
     height: 2vh;
   }
-}
+} */
