@@ -103,6 +103,10 @@ a {
   margin: 0 0 2% 0;
 }
 
+.backgroundTopAvaptive {
+  display: none;
+}
+
 .backgroundTop {
   grid-area: 1/1;
   width: 100vw;
@@ -143,8 +147,11 @@ a {
   /* margin: 7vh 0 0 0; */
 }
 
-.linkSignIn {
-  transform: translateX(8vw);
+.leftBlockFromNav {
+  display: flex;
+  align-items: center;
+  translate: 10vw;
+  gap: 3vw;
 }
 
 .SignUpButton {
@@ -164,7 +171,6 @@ a {
   height: 5vh;
   background-color: #172755;
   transition: all 0.3s;
-  transform: translateX(10.5vw);
 }
 
 .menuIcon {
@@ -208,6 +214,10 @@ a {
   font-style: normal;
   font-weight: 400;
   margin-bottom: 8%;
+}
+
+.paragraphFromTopBackground2 {
+  display: none;
 }
 
 /* .buttonFromTopBackground {
@@ -325,6 +335,10 @@ a {
   z-index: 2;
 }
 
+.mainScreenForAdaptive {
+  display: none;
+}
+
 .chart3 {
   grid-area: 1/1;
   z-index: 3;
@@ -395,6 +409,13 @@ a {
   flex-direction: column;
   gap: 3vh;
   width: 26vw;
+}
+
+.monitoringDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
 }
 
 .monitoring {
@@ -1035,6 +1056,8 @@ a {
 
 @media (max-width: 768px) {
   .nav {
+    background: #172755;
+    box-shadow: 0px 4px 4px 0px #12214d;
   }
 
   .logoFromHeader {
@@ -1049,6 +1072,7 @@ a {
     justify-content: end;
     width: 50vw;
     gap: 3vw;
+    translate: 0;
   }
 
   .linkSignIn {
@@ -1061,17 +1085,199 @@ a {
     margin-right: 6vw;
   }
 
-  .SignUpButton {
-    display: none;
-  }
-
-  .navFromCenter {
-    display: none;
-  }
-
   .logoFromHeader_ {
     width: 50vw;
   }
+
+  .mainScreenForAdaptive {
+    display: block;
+    grid-area: 1/1;
+    width: 100%;
+    margin: 15% 0% 5%;
+  }
+
+  .backgroundTopAvaptive {
+    display: block;
+    grid-area: 1/1;
+    width: 100%;
+  }
+
+  .backgroundTop,
+  .paragraphFromTopBackground,
+  .mainScreen,
+  .chart3,
+  .navFromCenter,
+  .SignUpButton {
+    display: none;
+  }
+  /* DISPLAY NONE END */
+
+  .figcaptionFromTopBackground {
+    margin: 70% 0% 5%;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .h1FromTopBackground {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 8.1vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 37.2px */
+    width: 85%;
+    margin: 0 0 15px 0;
+  }
+
+  .paragraphFromTopBackground2 {
+    display: block;
+    color: var(--text-secondary, #8794ba);
+    /* text / body */
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    width: 85%;
+    margin: 0 0 26px 0;
+  }
+
+  .buttonFromTopBackground {
+    display: flex;
+    height: 50px;
+    padding: 10px 80px;
+    justify-content: center;
+    align-items: center;
+    width: 335px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .mainFeatures {
+    /* margin-right: 5%; */
+  }
+
+  .mainFeatures_ {
+    align-items: start;
+    margin: 10vh 5% 5% 5%;
+  }
+
+  .h2MainFeatures_ {
+    font-size: 8vw;
+  }
+
+  .paragraphMainFeatures_ { 
+    text-align: left;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .mainFeatures__ {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .monitoringDescription {
+    align-items: start;
+  }
+
+  .monitoring,
+  .widgetSystem,
+  .bestPerformance {
+    width: auto;
+  }
+
+  .pFromMainFeaturesArticle {
+    font-size: 16px;
+  }
+
+  .pFromMainFeaturesArticle_ {
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .mainFeaturesArticle {
+    align-items: start;
+    flex-direction: row;
+    margin-left: 5%;
+    width: 88%;
+    height: 18vh;
+  }
+}
+
+@media (max-width: 550px) {
+  .mainScreenForAdaptive {
+    margin: 20% 0 5%;
+  }
+}
+
+@media (max-width: 475px) {
+  .figcaptionFromTopBackground {
+    margin: 80% 0 5% 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .mainScreenForAdaptive {
+    margin: 25% 0 5%;
+  }
+
+  .h1FromTopBackground {
+    font-size: 8.3vw;
+    width: 89%;
+  }
+}
+
+@media (max-width: 380px) {
+  .figcaptionFromTopBackground {
+    margin: 90% 0 5% 0;
+  }
+}
+
+@media (max-width: 364px) {
+  .figcaptionFromTopBackground {
+    margin: 100% 0 5% 0;
+  }
+
+  .buttonFromTopBackground {
+    width: 80%;
+    height: auto;
+  }
+
+  @media (max-width: 300px) {
+    .nav {
+      height: 10%;
+    }
+
+    .figcaptionFromTopBackground {
+      margin: 95% 0 5% 0;
+    }
+
+    .h1FromTopBackground {
+      margin: 0 0 1% 0;
+    }
+
+    .paragraphFromTopBackground2 {
+      font-size: 100%;
+      margin: 0 0 3% 0;
+    }
+  }
+
+  
+  @media (max-width: 251px) {
+    .figcaptionFromTopBackground {
+      margin: 90% 0 5% 0;
+    }
+
+    .paragraphFromTopBackground2 {
+      font-size: 80%;
+    }
+
+    .backgroundTopAvaptive {
+      /* width: 100%; */
+    }
 }
 
 /* @media (max-width: 680px) {
