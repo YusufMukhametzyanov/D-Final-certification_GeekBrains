@@ -100,7 +100,6 @@ a {
 
 .header {
   display: grid;
-  margin: 0 0 2% 0;
 }
 
 .backgroundTopAvaptive {
@@ -188,6 +187,8 @@ a {
 .figureFromTop {
   display: grid;
   grid-area: 1/1;
+  background: #F8F9FF;
+  z-index: 0;
 }
 
 .figcaptionFromTopBackground {
@@ -364,6 +365,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #F8F9FF;
 }
 
 .mainFeatures_ {
@@ -1094,12 +1096,14 @@ a {
     grid-area: 1/1;
     width: 100%;
     margin: 15% 0% 5%;
+    z-index: 30;
   }
 
   .backgroundTopAvaptive {
     display: block;
     grid-area: 1/1;
     width: 100%;
+    z-index: 1;
   }
 
   .backgroundTop,
@@ -1118,6 +1122,7 @@ a {
     align-items: center;
     flex-direction: column;
     justify-content: flex-end;
+    z-index: 2;
   }
 
   .h1FromTopBackground {
@@ -1176,6 +1181,28 @@ a {
 
   .mainFeatures__ {
     flex-direction: column;
+    width: 100%;
+  }
+
+  .mainFigurate, .mainFigurate2 {
+    flex-direction: column;
+    background: #F8F9FF;
+    margin-bottom: 0;
+  }
+
+  .h2FromMainTop {
+    font-size: 8vw;
+  }
+
+  .pFromMainTop {
+    font-size: 14px;
+  }
+
+  .mainFigcaptionFromFigurateTop {
+    width: 90%;
+  }
+
+  .imgFigurateTop {
     width: 100%;
   }
   
