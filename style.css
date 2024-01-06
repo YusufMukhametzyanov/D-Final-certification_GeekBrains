@@ -148,7 +148,13 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: all 0.3s;
   /* margin: 7vh 0 0 0; */
+}
+
+.linkFromNav:hover {
+  text-decoration: underline;
+  scale: 1.1;
 }
 
 .leftBlockFromNav {
@@ -373,6 +379,13 @@ a {
 
 .bodyFromMain_ {
   background: #f8f9ff;
+}
+
+.bodyFromMain__ {
+  display: none;
+  background: #f8f9ff;
+  transform: translateY(-8%);
+  z-index: 0;
 }
 
 .mainFeatures {
@@ -602,6 +615,12 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
+}
+
+.pricingPlans3:hover,
+.pricingPlans4:hover {
+  scale: 1.1;
 }
 
 .pricingPlans3_ {
@@ -618,6 +637,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.3s;
   justify-content: center;
 }
 
@@ -904,6 +924,17 @@ a {
   font-weight: 500;
 }
 
+.primaryEmail::placeholder,
+.password::placeholder,
+.reTypePassword::placeholder {
+  color: #8989a2;
+  font-family: Roboto;
+  font-size: 1.1vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
 .password {
   display: flex;
   padding: 1.1vw;
@@ -916,7 +947,7 @@ a {
   font-weight: 500;
 }
 
-.ReTypePassword {
+.reTypePassword {
   display: flex;
   padding: 1.1vw;
   align-items: flex-start;
@@ -1041,6 +1072,12 @@ a {
   font-family: Roboto;
   font-size: 1vw;
   font-weight: 400;
+  transition: all 1s;
+}
+
+.navigationBottomParagraph:hover {
+  text-decoration: underline;
+  scale: 1.1;
 }
 
 .logoSocialNetwork {
@@ -1053,6 +1090,11 @@ a {
 .footerLogos {
   width: 2vw;
   height: 2.5vh;
+  transition: all 0.3s;
+}
+
+.footerLogos:hover {
+  scale: 1.5;
 }
 
 /* ==========Adaptive=========== */
@@ -1064,6 +1106,15 @@ a {
   .linkSignIn,
   .SignUpButton {
     transform: translateY(-0.5vh);
+  }
+
+  .linkSignIn {
+    transition: all 0.3s;
+  }
+
+  .linkSignIn:hover :active {
+    text-decoration: underline;
+    scale: 1.5;
   }
 
   .logoFromHeader {
@@ -1277,6 +1328,7 @@ a {
 
   .imgFigurateTop {
     width: 100%;
+    z-index: 2;
   }
 
   .monitoringDescription {
@@ -1334,6 +1386,210 @@ a {
 @media (max-width: 380px) {
   .figcaptionFromTopBackground {
     margin: 90% 0 5% 0;
+  }
+}
+
+@media (max-width: 376px) {
+  .bodyFromMain2 {
+    display: none;
+  }
+
+  .bodyFromMain__ {
+    display: grid;
+    height: 407vw;
+  }
+
+  .topicForBottomAdaptive,
+  .bodyFromMainImg {
+    grid-area: 1/1;
+  }
+
+  .topicForBottomAdaptive {
+    margin: 72% 0 0 5%;
+    width: 90%;
+    height: 8%;
+  }
+
+  .bodyFromMainImg {
+    width: 100%;
+    background: #f8f9ff;
+  }
+
+  .h2PricingPlans {
+    font-size: 8vw;
+    text-align: left;
+  }
+
+  .paragraphPricingPlans {
+    font-size: 4vw;
+    text-align: left;
+    height: 5%;
+  }
+
+  .pricingPlans2 {
+    height: 25%;
+    margin: 115% 0 0 0;
+    overflow: scroll;
+    grid-template: 90% / repeat(3, 75%);
+    justify-content: start;
+  }
+
+  .pricingPlans4_1,
+  .pricingPlans4_2,
+  .pricingPlans4_3 {
+    border-radius: 2.5vw;
+    background: #fff;
+    box-shadow: 0px 1.17vw 3.4vw -15px #060f28;
+    z-index: 11;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 280px;
+    height: 358px; */
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0px 18px 50px -15px #060f28;
+  }
+
+  /* .pricingPlans4_1 {
+    transform: translateX(-110%);
+  }
+
+  .pricingPlans4_3 {
+    transform: translateX(110%);
+  } */
+
+  .standart {
+    font-size: 7vw;
+  }
+
+  .users,
+  .duration {
+    font-size: 4vw;
+  }
+
+  .line2 {
+    width: 60vw;
+  }
+
+  .currency2 {
+    font-size: 9vw;
+  }
+
+  .price2 {
+    font-size: 18vw;
+  }
+
+  .order2 {
+    height: 13.33vw;
+    width: 55vw;
+    gap: 10px;
+    border-radius: 68px;
+    font-size: 16px;
+  }
+
+  .lineAfterPricingPlans2 {
+    grid-area: 1/1;
+    width: 335px;
+    height: 1px;
+    background: #2a407c;
+    grid-area: 1/1;
+    width: 89.3vw;
+    height: 1px;
+    background: #2a407c;
+    margin: 224% 0 0 5%;
+  }
+
+  .signUp {
+    width: 100%;
+    height: 28.9%;
+    margin: 277% 0 0 0;
+    gap: 4.1vw;
+  }
+
+  .signUpTitle {
+    font-size: 7.7vw;
+    width: 93vw;
+    padding: 0 0 3vw 0;
+  }
+
+  .startTrialPeriodButton {
+    width: 89vw;
+    height: 13vw;
+    font-size: 4.1vw;
+  }
+
+  .primaryEmail,
+  .password,
+  .reTypePassword {
+    height: 11vw;
+    font-size: 4.1vw;
+    padding-left: 3vw;
+    font-weight: 600;
+  }
+
+  .primaryEmail::placeholder,
+  .password::placeholder,
+  .reTypePassword::placeholder {
+    color: #8989a2;
+    font-family: Roboto;
+    font-size: 4.1vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .signUpForm {
+    gap: 4.1vw;
+  }
+
+  .getBetter {
+    font-size: 3.5vw;
+  }
+
+  .rating {
+    width: 25.4vw;
+    height: 4vw;
+  }
+
+  .rating:not(:checked) > label {
+    width: 4.3vw;
+    font-size: 4.5vw;
+  }
+
+  .lineSignUp {
+    width: 88.6vw;
+  }
+
+  .alreadyAccountParagraph,
+  .alreadyAccountLink {
+    font-size: 3.74vw;
+  }
+
+  .logoSocialNetwork {
+    gap: 18%;
+  }
+
+  .footerForMain2 {
+    margin-top: 413%;
+    height: 6%;
+    grid-template: 1fr/1fr 1fr;
+  }
+
+  .footer-logo {
+    width: 33.05vw;
+  }
+
+  .footerLogos {
+    width: 2.9vw;
+    height: auto;
+  }
+
+  .footerLogos2 {
+    width: 6.9vw;
+    height: auto;
   }
 }
 

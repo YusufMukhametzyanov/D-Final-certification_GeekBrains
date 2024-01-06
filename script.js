@@ -38,3 +38,32 @@ navForAdaptiveEl.addEventListener("mouseout", function (e) {
   menuEl.style.display = "flex";
   navForAdaptiveEl.style.display = "none";
 });
+
+const pricingPlans2El = document.querySelector(".pricingPlans2");
+pricingPlans2El.scrollLeft = 253;
+
+const passwordEl = document.querySelectorAll(".password");
+const reTypePasswordEl = document.querySelectorAll(".reTypePassword");
+const signUpTitleEl = document.querySelectorAll(".signUpTitle");
+
+reTypePasswordEl[1].addEventListener("input", function (e) {
+  if (passwordEl[1].value != reTypePasswordEl[1].value) {
+    passwordEl[1].style.border = "1px solid red";
+    reTypePasswordEl[1].style.border = "1px solid red";
+  }
+  if (passwordEl[1].value === reTypePasswordEl[1].value) {
+    passwordEl[1].style.border = "1px solid green";
+    reTypePasswordEl[1].style.border = "1px solid green";
+  }
+});
+
+passwordEl[1].addEventListener("input", function (e) {
+  if (passwordEl[1].value != reTypePasswordEl[1].value) {
+    passwordEl[1].style.border = "1px solid red";
+    reTypePasswordEl[1].style.border = "1px solid red";
+  }
+  if (passwordEl[1].value === reTypePasswordEl[1].value) {
+    passwordEl[1].style.border = "1px solid green";
+    reTypePasswordEl[1].style.border = "1px solid green";
+  }
+});
