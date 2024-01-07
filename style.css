@@ -357,6 +357,12 @@ a {
   width: 45%;
   height: 78%;
   z-index: 2;
+  transition: all 0.3s;
+}
+
+.mainScreen:hover {
+  z-index: 3;
+  scale: 1.1;
 }
 
 .mainScreenForAdaptive {
@@ -369,6 +375,11 @@ a {
   margin: 17.7% 0 0 50%;
   width: 28vw;
   height: auto;
+  transition: all 0.3s;
+}
+
+.chart3:hover {
+  scale: 1.1;
 }
 
 .bodyFromMain {
